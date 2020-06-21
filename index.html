@@ -85,9 +85,9 @@
                                                     </svg> 
                                                 </div>
                                                 <div class="kt-iconbox__desc">
-                                                    <h3 class="kt-iconbox__title">
+                                                    <h4 class="kt-iconbox__title">
                                                         <a class="kt-link" href="#" style="padding: 10px">Total</a>{ <span id="demo"></span> }
-                                                    </h3>
+                                                    </h4>
                                                     <!-- <div class="kt-iconbox__content">
                                                         Base FAQ Questions
                                                     </div> -->
@@ -104,9 +104,9 @@
                                                     <i class="fa fa-hourglass-half" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="kt-iconbox__desc">
-                                                    <h3 class="kt-iconbox__title">
+                                                    <h4 class="kt-iconbox__title">
                                                         <a class="kt-link" href="#" style="padding: 10px">In-Progress</a>{ <span id="In_Progress"></span> }
-                                                    </h3>
+                                                    </h4>
                                                     <!-- <div class="kt-iconbox__content">
                                                         Books & Articles
                                                     </div> -->
@@ -123,9 +123,9 @@
                                                     <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 32px;padding: 10px;"></i>
                                                  </div>
                                                 <div class="kt-iconbox__desc">
-                                                    <h3 class="kt-iconbox__title">
+                                                    <h4 class="kt-iconbox__title">
                                                         <a class="kt-link" href="#" style="padding: 14px;">Sucess</a>{ <span id="Sucess"></span> }
-                                                    </h3>
+                                                    </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -140,9 +140,9 @@
                                                         
                                                 </div>
                                                 <div class="kt-iconbox__desc">
-                                                    <h3 class="kt-iconbox__title">
+                                                    <h4 class="kt-iconbox__title">
                                                         <a class="kt-link" href="#" style="padding: 14px;">Cancle</a>{ <span id="Cancle"></span> }
-                                                    </h3>
+                                                    </h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,7 +165,7 @@
 												<div class="row align-items-center">
 													<div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
 														<div class="kt-input-icon kt-input-icon--left">
-															<input type="text" class="form-control" placeholder="Search..." id="generalSearch">
+															<input onclick="search()" type="text" class="form-control" placeholder="Search..." id="myInput">
 															<span class="kt-input-icon__icon kt-input-icon__icon--left">
 																<span><i class="la la-search"></i></span>
 															</span>
@@ -850,6 +850,9 @@
     background-color: #6f42c1;
     border-color: #643ab0;
 }
+#kt_header_mobile_toggler,#kt_header_mobile_topbar_toggler{
+    display: none;
+}
 .modal-body div{float:left; width: 100%}
 .modal-body div p{float:left; width: 20%; font-weight: 600;}
 .modal-body div span{float:left; width: 80%}
@@ -954,10 +957,20 @@
               
       }
       myfunction()
-
-       
-              
-              
+    
+  </script>
+  <script>
+      function search(){
+          alert()
+            $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#example tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+            });
+      }
   </script>
 		<!-- end::Global Config -->
 
