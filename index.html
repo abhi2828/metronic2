@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!-- begin::Head -->
+	<head>
+		<base href="">
+		<meta charset="utf-8" />
+		<title>Metronic | Dashboard</title>
+		<meta name="description" content="Updates and statistics">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--begin::Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
+
+		<!--end::Fonts -->
+
+		<!--begin::Page Vendors Styles(used by this page) -->
+		<link href="assets1/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Vendors Styles -->
+
+		<!--begin::Global Theme Styles(used by all pages) -->
+		<link href="assets1/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets1/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+
+		<!--begin::Layout Skins(used by all pages) -->
+		<link href="assets1/css/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets1/css/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="assets1/css/skins/brand/dark.css" rel="stylesheet" type="text/css" />
+		<link href="assets1/css/skins/aside/dark.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Layout Skins -->
+		<link rel="shortcut icon" href="assets1/media/logos/favicon.ico" />
+	</head>
+
+	<!-- end::Head -->
+
+	<!-- begin::Body -->
+	<body onload="myFunction()" class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
+
+		<!-- begin:: Page -->
+
+		<!-- begin:: Header Mobile -->
+		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
+			<div class="kt-header-mobile__logo">
+				<a href="index.html">
+					<img alt="Logo" src="assets1/media/logos/logo-light.png" />
+				</a>
+			</div>
+			<div class="kt-header-mobile__toolbar">
+				<button class="kt-header-mobile__toggler kt-header-mobile__toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
+				<button class="kt-header-mobile__toggler" id="kt_header_mobile_toggler"><span></span></button>
+				<button class="kt-header-mobile__topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+			</div>
+		</div>
+
+		<!-- end:: Header Mobile -->
+		<div class="kt-grid kt-grid--hor kt-grid--root">
+			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+
+				<!-- begin:: Aside -->
+
+	    		<!-- end:: Aside -->
+				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+
+					<div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+
+					
+						
+						<div class="kt-container">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="kt-portlet kt-iconbox kt-iconbox--brand kt-iconbox--animate-slower">
+                                        <div class="kt-portlet__body">
+                                            <div class="kt-iconbox__body">
+                                                <div class="kt-iconbox__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path d="M2.56066017,10.6819805 L4.68198052,8.56066017 C5.26776695,7.97487373 6.21751442,7.97487373 6.80330086,8.56066017 L8.9246212,10.6819805 C9.51040764,11.267767 9.51040764,12.2175144 8.9246212,12.8033009 L6.80330086,14.9246212 C6.21751442,15.5104076 5.26776695,15.5104076 4.68198052,14.9246212 L2.56066017,12.8033009 C1.97487373,12.2175144 1.97487373,11.267767 2.56066017,10.6819805 Z M14.5606602,10.6819805 L16.6819805,8.56066017 C17.267767,7.97487373 18.2175144,7.97487373 18.8033009,8.56066017 L20.9246212,10.6819805 C21.5104076,11.267767 21.5104076,12.2175144 20.9246212,12.8033009 L18.8033009,14.9246212 C18.2175144,15.5104076 17.267767,15.5104076 16.6819805,14.9246212 L14.5606602,12.8033009 C13.9748737,12.2175144 13.9748737,11.267767 14.5606602,10.6819805 Z" fill="#000000" opacity="0.3" />
+                                                            <path d="M8.56066017,16.6819805 L10.6819805,14.5606602 C11.267767,13.9748737 12.2175144,13.9748737 12.8033009,14.5606602 L14.9246212,16.6819805 C15.5104076,17.267767 15.5104076,18.2175144 14.9246212,18.8033009 L12.8033009,20.9246212 C12.2175144,21.5104076 11.267767,21.5104076 10.6819805,20.9246212 L8.56066017,18.8033009 C7.97487373,18.2175144 7.97487373,17.267767 8.56066017,16.6819805 Z M8.56066017,4.68198052 L10.6819805,2.56066017 C11.267767,1.97487373 12.2175144,1.97487373 12.8033009,2.56066017 L14.9246212,4.68198052 C15.5104076,5.26776695 15.5104076,6.21751442 14.9246212,6.80330086 L12.8033009,8.9246212 C12.2175144,9.51040764 11.267767,9.51040764 10.6819805,8.9246212 L8.56066017,6.80330086 C7.97487373,6.21751442 7.97487373,5.26776695 8.56066017,4.68198052 Z" fill="#000000" />
+                                                        </g>
+                                                    </svg> 
+                                                </div>
+                                                <div class="kt-iconbox__desc">
+                                                    <h3 class="kt-iconbox__title">
+                                                        <a class="kt-link" href="#" style="padding: 10px">Total</a>{ <span id="demo"></span> }
+                                                    </h3>
+                                                    <!-- <div class="kt-iconbox__content">
+                                                        Base FAQ Questions
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="kt-portlet kt-iconbox kt-iconbox--success kt-iconbox--animate-slow">
+                                        <div class="kt-portlet__body">
+                                            <div class="kt-iconbox__body">
+                                                <div class="kt-iconbox__icon" style="color:#0abb87 !important;font-size: 32px;">
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="kt-iconbox__desc">
+                                                    <h3 class="kt-iconbox__title">
+                                                        <a class="kt-link" href="#" style="padding: 10px">In-Progress</a>{ <span id="In_Progress"></span> }
+                                                    </h3>
+                                                    <!-- <div class="kt-iconbox__content">
+                                                        Books & Articles
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="kt-portlet kt-iconbox kt-iconbox--warning kt-iconbox--animate-fast">
+                                        <div class="kt-portlet__body">
+                                            <div class="kt-iconbox__body">
+                                                <div class="kt-iconbox__icon">
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 32px;padding: 10px;"></i>
+                                                 </div>
+                                                <div class="kt-iconbox__desc">
+                                                    <h3 class="kt-iconbox__title">
+                                                        <a class="kt-link" href="#" style="padding: 14px;">Sucess</a>{ <span id="Sucess"></span> }
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="kt-portlet kt-iconbox kt-iconbox--danger kt-iconbox--animate-faster">
+                                        <div class="kt-portlet__body">
+                                            <div class="kt-iconbox__body">
+                                                <div class="kt-iconbox__icon">
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a;padding: 9px;font-size: 32px;"></i>
+                                                        
+                                                </div>
+                                                <div class="kt-iconbox__desc">
+                                                    <h3 class="kt-iconbox__title">
+                                                        <a class="kt-link" href="#" style="padding: 14px;">Cancle</a>{ <span id="Cancle"></span> }
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<!-- begin:: Content -->
+						<div class="kt-container  kt-grid__item kt-grid__item--fluid">
+							
+							<div class="kt-portlet kt-portlet--mobile">
+								
+								<div class="kt-portlet__body">
+
+									<!--begin: Search Form -->
+									<div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
+										<div class="row align-items-center">
+											<div class="col-xl-8 order-2 order-xl-1">
+												<div class="row align-items-center">
+													<div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-input-icon kt-input-icon--left">
+															<input type="text" class="form-control" placeholder="Search..." id="generalSearch">
+															<span class="kt-input-icon__icon kt-input-icon__icon--left">
+																<span><i class="la la-search"></i></span>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-4 order-1 order-xl-2 kt-align-right">
+												<a href="#" class="btn btn-default kt-hidden">
+													<i class="la la-cart-plus"></i> New Order
+												</a>
+												<div class="kt-separator kt-separator--border-dashed kt-separator--space-lg d-xl-none"></div>
+											</div>
+										</div>
+									</div>
+
+									<!--end: Search Form -->
+                                </div>
+                                
+								<div class="kt-portlet__body kt-portlet__body--fit">
+                                    
+									<!--begin: Datatable -->
+                                    <!-- <div class="kt-datatable" id="local_data"></div> -->
+                                    
+                                   <div class="kt-container">
+                                    <table id="example" class="display" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Vertical</th>
+                                                <th>Template</th>
+                                                <th>Angle</th>
+                                                <th>Trafic Source</th>
+                                                <th>Offer</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Brielle Williamson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Herrod Chandler</td>
+                                                <td>Sales Assistant</td>
+                                                <td>San Francisco</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Rhona Davidson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>Tokyo</td>
+                                                <td>55</td>
+                                                <td>2010/10/14</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Colleen Hurst</td>
+                                                <td>Javascript Developer</td>
+                                                <td>San Francisco</td>
+                                                <td>39</td>
+                                                <td>2009/09/15</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Sonya Frost</td>
+                                                <td>Software Engineer</td>
+                                                <td>Edinburgh</td>
+                                                <td>23</td>
+                                                <td>2008/12/13</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Jena Gaines</td>
+                                                <td>Office Manager</td>
+                                                <td>London</td>
+                                                <td>30</td>
+                                                <td>2008/12/19</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Quinn Flynn</td>
+                                                <td>Support Lead</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2013/03/03</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Charde Marshall</td>
+                                                <td>Regional Director</td>
+                                                <td>San Francisco</td>
+                                                <td>36</td>
+                                                <td>2008/10/16</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Haley Kennedy</td>
+                                                <td>Senior Marketing Designer</td>
+                                                <td>London</td>
+                                                <td>43</td>
+                                                <td>2012/12/18</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Tatyana Fitzpatrick</td>
+                                                <td>Regional Director</td>
+                                                <td>London</td>
+                                                <td>19</td>
+                                                <td>2010/03/17</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr><td></td>
+                                                <td>Michael Silva</td>
+                                                <td>Marketing Designer</td>
+                                                <td>London</td>
+                                                <td>66</td>
+                                                <td>2012/11/27</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Paul Byrd</td>
+                                                <td>Chief Financial Officer (CFO)</td>
+                                                <td>New York</td>
+                                                <td>64</td>
+                                                <td>2010/06/09</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Gloria Little</td>
+                                                <td>Systems Administrator</td>
+                                                <td>New York</td>
+                                                <td>59</td>
+                                                <td>2009/04/10</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Bradley Greer</td>
+                                                <td>Software Engineer</td>
+                                                <td>London</td>
+                                                <td>41</td>
+                                                <td>2012/10/13</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Dai Rios</td>
+                                                <td>Personnel Lead</td>
+                                                <td>Edinburgh</td>
+                                                <td>35</td>
+                                                <td>2012/09/26</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Jenette Caldwell</td>
+                                                <td>Development Lead</td>
+                                                <td>New York</td>
+                                                <td>30</td>
+                                                <td>2011/09/03</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Yuri Berry</td>
+                                                <td>Chief Marketing Officer (CMO)</td>
+                                                <td>New York</td>
+                                                <td>40</td>
+                                                <td>2009/06/25</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Caesar Vance</td>
+                                                <td>Pre-Sales Support</td>
+                                                <td>New York</td>
+                                                <td>21</td>
+                                                <td>2011/12/12</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Doris Wilder</td>
+                                                <td>Sales Assistant</td>
+                                                <td>Sidney</td>
+                                                <td>23</td>
+                                                <td>2010/09/20</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Angelica Ramos</td>
+                                                <td>Chief Executive Officer (CEO)</td>
+                                                <td>London</td>
+                                                <td>47</td>
+                                                <td>2009/10/09</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Gavin Joyce</td>
+                                                <td>Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>42</td>
+                                                <td>2010/12/22</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Jennifer Chang</td>
+                                                <td>Regional Director</td>
+                                                <td>Singapore</td>
+                                                <td>28</td>
+                                                <td>2010/11/14</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Brenden Wagner</td>
+                                                <td>Software Engineer</td>
+                                                <td>San Francisco</td>
+                                                <td>28</td>
+                                                <td>2011/06/07</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Fiona Green</td>
+                                                <td>Chief Operating Officer (COO)</td>
+                                                <td>San Francisco</td>
+                                                <td>48</td>
+                                                <td>2010/03/11</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Shou Itou</td>
+                                                <td>Regional Marketing</td>
+                                                <td>Tokyo</td>
+                                                <td>20</td>
+                                                <td>2011/08/14</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>   
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Michelle House</td>
+                                                <td>Integration Specialist</td>
+                                                <td>Sidney</td>
+                                                <td>37</td>
+                                                <td>2011/06/02</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Suki Burks</td>
+                                                <td>Developer</td>
+                                                <td>London</td>
+                                                <td>53</td>
+                                                <td>2009/10/22</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Prescott Bartlett</td>
+                                                <td>Technical Author</td>
+                                                <td>London</td>
+                                                <td>27</td>
+                                                <td>2011/05/07</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Gavin Cortez</td>
+                                                <td>Team Leader</td>
+                                                <td>San Francisco</td>
+                                                <td>22</td>
+                                                <td>2008/10/26</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Martena Mccray</td>
+                                                <td>Post-Sales support</td>
+                                                <td>Edinburgh</td>
+                                                <td>46</td>
+                                                <td>2011/03/09</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Unity Butler</td>
+                                                <td>Marketing Designer</td>
+                                                <td>San Francisco</td>
+                                                <td>47</td>
+                                                <td>2009/12/09</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Howard Hatfield</td>
+                                                <td>Office Manager</td>
+                                                <td>San Francisco</td>
+                                                <td>51</td>
+                                                <td>2008/12/16</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Hope Fuentes</td>
+                                                <td>Secretary</td>
+                                                <td>San Francisco</td>
+                                                <td>41</td>
+                                                <td>2010/02/12</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Vivian Harrell</td>
+                                                <td>Financial Controller</td>
+                                                <td>San Francisco</td>
+                                                <td>62</td>
+                                                <td>2009/02/14</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Timothy Mooney</td>
+                                                <td>Office Manager</td>
+                                                <td>London</td>
+                                                <td>37</td>
+                                                <td>2008/12/11</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Jackson Bradshaw</td>
+                                                <td>Director</td>
+                                                <td>New York</td>
+                                                <td>65</td>
+                                                <td>2008/09/26</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Olivia Liang</td>
+                                                <td>Support Engineer</td>
+                                                <td>Singapore</td>
+                                                <td>64</td>
+                                                <td>2011/02/03</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Bruno Nash</td>
+                                                <td>Software Engineer</td>
+                                                <td>London</td>
+                                                <td>38</td>
+                                                <td>2011/05/03</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Sakura Yamamoto</td>
+                                                <td>Support Engineer</td>
+                                                <td>Tokyo</td>
+                                                <td>37</td>
+                                                <td>2009/08/19</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Thor Walton</td>
+                                                <td>Developer</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2013/08/11</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Finn Camacho</td>
+                                                <td>Support Engineer</td>
+                                                <td>San Francisco</td>
+                                                <td>47</td>
+                                                <td>2009/07/07</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Serge Baldwin</td>
+                                                <td>Data Coordinator</td>
+                                                <td>Singapore</td>
+                                                <td>64</td>
+                                                <td>2012/04/09</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>                                            
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Zenaida Frank</td>
+                                                <td>Software Engineer</td>
+                                                <td>New York</td>
+                                                <td>63</td>
+                                                <td>2010/01/04</td>
+                                                <td>
+                                                    <i class="fa fa-times" aria-hidden="true" style="color: #fd397a !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Zorita Serrano</td>
+                                                <td>Software Engineer</td>
+                                                <td>San Francisco</td>
+                                                <td>56</td>
+                                                <td>2012/06/01</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>                                            
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Jennifer Acosta</td>
+                                                <td>Junior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>43</td>
+                                                <td>2013/02/01</td>
+                                                <td>
+                                                    <i class="fa fa-hourglass-half" aria-hidden="true" style="color:#0abb87 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>                                            
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Jonas Alexander</td>
+                                                <td>Developer</td>
+                                                <td>San Francisco</td>
+                                                <td>30</td>
+                                                <td>2010/07/14</td>
+                                                <td>
+                                                    <i class="fa fa-check" aria-hidden="true" style="color: #ffb822 !important;font-size: 12px;padding-left: 20px;"></i>
+                                                </td>                                           
+                                             </tr>                                            
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Vertical</th>
+                                                <th>Template</th>
+                                                <th>Angle</th>
+                                                <th>Trafic Source</th>
+                                                <th>Offer</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                   </div>
+
+									<!--end: Datatable -->
+								</div>
+							</div>
+						</div>
+
+						<!-- end:: Content -->
+                    </div>
+                    
+                    <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">User Details</h4>
+        </div>
+        <div class="modal-body">
+          <div class="Serial"><p>Serial No.: </p><span></span></div>
+          <div class="Vertical"><p>Vertical: </p><span></span></div>
+          <div class="Template"><p>Template: </p><span></span></div>
+          <div class="Angle"><p>Angle: </p><span></span></div>
+          <div class="Trafic"><p>Trafic Source: </p><span></span></div>
+          <div class="Offer"><p>Offer: </p><span></span></div>
+          <div class="Status"><p>Status: </p><span></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+
+					<!-- begin:: Footer -->
+					<div class="kt-footer  kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop" id="kt_footer">
+						<div class="kt-container  kt-container--fluid ">
+							<div class="kt-footer__copyright">
+								2020&nbsp;&copy;&nbsp;<a href="http://keenthemes.com/metronic" target="_blank" class="kt-link">serverstack</a>
+							</div>
+							<div class="kt-footer__menu">
+								<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">About</a>
+								<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Team</a>
+								<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Contact</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- end:: Footer -->
+				</div>
+			</div>
+		</div>
+
+		<!-- end:: Page -->
+
+
+
+        <!-- begin::Global Config(global config for global JS sciprts) -->
+        
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<style>
+    .btn-purple {
+    color: #fff;
+    background-color: #6f42c1;
+    border-color: #643ab0;
+}
+.modal-body div{float:left; width: 100%}
+.modal-body div p{float:left; width: 20%; font-weight: 600;}
+.modal-body div span{float:left; width: 80%}
+</style>
+
+<script>
+    jQuery(document).ready(function($) {
+    $('#example').DataTable({
+        searching: false,
+        responsive: true,
+        "autoWidth": false,
+    });
+    var table = $('#example').DataTable();
+    $('#example tbody').on('click', 'tr', function () {
+        //console.log(table.row(this).data());
+        $(".modal-body div span").text("");
+        $(".Serial span").text(table.row(this).data()[0]);
+        $(".Vertical span").text(table.row(this).data()[1]);
+        $(".Template span").text(table.row(this).data()[2]);
+        $(".Angle span").text(table.row(this).data()[3]);
+        $(".Trafic span").text(table.row(this).data()[4]);
+        $(".Offer span").text(table.row(this).data()[5]);
+        $(".Status span").text(table.row(this).data()[6]);
+        $("#myModal").modal("show");
+    });
+} );
+</script>
+		<script>
+			var KTAppOptions = {
+				"colors": {
+					"state": {
+						"brand": "#5d78ff",
+						"dark": "#282a3c",
+						"light": "#ffffff",
+						"primary": "#5867dd",
+						"success": "#34bfa3",
+						"info": "#36a3f7",
+						"warning": "#ffb822",
+						"danger": "#fd3995"
+					},
+					"base": {
+						"label": [
+							"#c5cbe3",
+							"#a1a8c3",
+							"#3d4465",
+							"#3e4466"
+						],
+						"shape": [
+							"#f0f3ff",
+							"#d9dffa",
+							"#afb4d4",
+							"#646c9a"
+						]
+					}
+				}
+			};
+		</script>
+   <script>
+    
+
+    function myfunction(){
+              function  getTableDataLength(){
+              
+              var rowCount = $('#example >tbody >tr').length;
+              document.getElementById("demo").innerHTML = rowCount
+              }
+              getTableDataLength()
+              
+              function  In_Progress(){
+                  
+                  var colCount = $('#example > tbody > tr > td > i.fa-hourglass-half').length;
+                  document.getElementById("In_Progress").innerHTML = colCount
+              }
+              In_Progress()
+
+              function  Sucess(){
+                  
+                  var colCount = $('#example > tbody > tr > td > i.fa-check').length;
+                  document.getElementById("Sucess").innerHTML = colCount
+              }
+              Sucess()
+
+              function  Cancle(){
+                  
+                  var colCount = $('#example > tbody > tr > td > i.fa-times').length;
+                  document.getElementById("Cancle").innerHTML = colCount
+              }
+              Cancle()
+
+              function addSerialNumber() {
+                  var i = 1
+                  $('table tr').each(function(index) {
+                      $(this).find('td:nth-child(1)').html(index);
+                  });
+                  $("#example thead tr,#example tfoot tr").each(function(i){
+          $(this).prepend("<th>Serial No</th>")
+  })
+              };
+              addSerialNumber();
+
+             
+              
+      }
+      myfunction()
+
+       
+              
+              
+  </script>
+		<!-- end::Global Config -->
+
+		<!--begin::Global Theme Bundle(used by all pages) -->
+		<script src="assets1/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+		<script src="assets1/js/scripts.bundle.js" type="text/javascript"></script>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Scripts(used by this page) -->
+		<script src="assets1/js/pages/crud/metronic-datatable/base/data-ajax.js" type="text/javascript"></script>
+
+		<!--end::Page Scripts -->
+
+	</body>
+
+	<!-- end::Body -->
+</html>
+
+
