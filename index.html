@@ -786,57 +786,79 @@
                     
                     <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+<div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+    <div class="modal-header">
+        <h4 class="modal-title">User Details</h4>
+    </div>
+    <div class="modal-body">
+        <!-- <div class="Serial"><p>Serial No.: </p><div style="border: 1px solid;"></div></div> -->
+        <div class="form-group Serial">
+        <label for="0">Serial No:</label>
+        <div type="text" class="form-control" id="0"> </div>
+        </div>
+        <div class="form-group Vertical">
+        <label for="1">Vertical:</label>
+        <div type="text" class="form-control" id="1"> </div>
+        </div>
+        <div class="form-group Template">
+        <label for="2">Template:</label>
+        <div type="text" class="form-control" id="2"> </div>
+        </div>
+        <div class="form-group Angle">
+        <label for="3">Angle :</label>
+        <div type="text" class="form-control" id="3"> </div>
+        </div>
+        <div class="form-group Trafic">
+        <label for="4">Trafic:</label>
+        <div type="text" class="form-control" id="4"> </div>
+        </div>
+        <div class="form-group Offer">
+        <label for="5">Offer:</label>
+        <div type="text" class="form-control" id="5"> </div>
+        </div>
+        <div class="form-group Status">
+        <label for="6">Status:</label>
+        <div type="text" class="form-control" id="6"> </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div>
+    </div>
     
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">User Details</h4>
+</div>
+</div>
+
+                <!-- begin:: Footer -->
+                <div class="kt-footer  kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop" id="kt_footer">
+                    <div class="kt-container  kt-container--fluid ">
+                        <div class="kt-footer__copyright">
+                            2020&nbsp;&copy;&nbsp;<a href="http://keenthemes.com/metronic" target="_blank" class="kt-link">serverstack</a>
+                        </div>
+                        <div class="kt-footer__menu">
+                            <a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">About</a>
+                            <a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Team</a>
+                            <a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end:: Footer -->
+            </div>
         </div>
-        <div class="modal-body">
-          <div class="Serial"><p>Serial No.: </p><span></span></div>
-          <div class="Vertical"><p>Vertical: </p><span></span></div>
-          <div class="Template"><p>Template: </p><span></span></div>
-          <div class="Angle"><p>Angle: </p><span></span></div>
-          <div class="Trafic"><p>Trafic Source: </p><span></span></div>
-          <div class="Offer"><p>Offer: </p><span></span></div>
-          <div class="Status"><p>Status: </p><span></span></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
     </div>
-    </div>
 
-					<!-- begin:: Footer -->
-					<div class="kt-footer  kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop" id="kt_footer">
-						<div class="kt-container  kt-container--fluid ">
-							<div class="kt-footer__copyright">
-								2020&nbsp;&copy;&nbsp;<a href="http://keenthemes.com/metronic" target="_blank" class="kt-link">serverstack</a>
-							</div>
-							<div class="kt-footer__menu">
-								<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">About</a>
-								<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Team</a>
-								<a href="http://keenthemes.com/metronic" target="_blank" class="kt-footer__menu-link kt-link">Contact</a>
-							</div>
-						</div>
-					</div>
-
-					<!-- end:: Footer -->
-				</div>
-			</div>
-		</div>
-
-		<!-- end:: Page -->
+    <!-- end:: Page -->
 
 
 
-        <!-- begin::Global Config(global config for global JS sciprts) -->
-        
+    <!-- begin::Global Config(global config for global JS sciprts) -->
+    
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -845,13 +867,13 @@
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
 <style>
-    .btn-purple {
-    color: #fff;
-    background-color: #6f42c1;
-    border-color: #643ab0;
+.btn-purple {
+color: #fff;
+background-color: #6f42c1;
+border-color: #643ab0;
 }
 #kt_header_mobile_toggler,#kt_header_mobile_topbar_toggler{
-    display: none;
+display: none;
 }
 .modal-body div{float:left; width: 100%}
 .modal-body div p{float:left; width: 20%; font-weight: 600;}
@@ -859,25 +881,25 @@
 </style>
 
 <script>
-    jQuery(document).ready(function($) {
-    $('#example').DataTable({
-        searching: false,
-        responsive: true,
-        "autoWidth": false,
-    });
-    var table = $('#example').DataTable();
-    $('#example tbody').on('click', 'tr', function () {
-        //console.log(table.row(this).data());
-        $(".modal-body div span").text("");
-        $(".Serial span").text(table.row(this).data()[0]);
-        $(".Vertical span").text(table.row(this).data()[1]);
-        $(".Template span").text(table.row(this).data()[2]);
-        $(".Angle span").text(table.row(this).data()[3]);
-        $(".Trafic span").text(table.row(this).data()[4]);
-        $(".Offer span").text(table.row(this).data()[5]);
-        $(".Status span").text(table.row(this).data()[6]);
-        $("#myModal").modal("show");
-    });
+jQuery(document).ready(function($) {
+$('#example').DataTable({
+    searching: false,
+    responsive: true,
+    "autoWidth": false,
+});
+var table = $('#example').DataTable();
+$('#example tbody').on('click', 'tr', function () {
+    //console.log(table.row(this).data());
+    $(".modal-body div span").text("");
+    $(".Serial div").text(table.row(this).data()[0]);
+    $(".Vertical div").text(table.row(this).data()[1]);
+    $(".Template div").text(table.row(this).data()[2]);
+    $(".Angle div").text(table.row(this).data()[3]);
+    $(".Trafic div").text(table.row(this).data()[4]);
+    $(".Offer div").text(table.row(this).data()[5]);
+    $(".Status div").text(table.row(this).data()[6]);
+    $("#myModal").modal("show");
+});
 } );
 </script>
 		<script>
